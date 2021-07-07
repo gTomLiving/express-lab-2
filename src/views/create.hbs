@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/styles.css">
+<div class="box">
+
+
+<h1>Create Your Own Pizza</h1>
+
+<form method="POST" action="/create">
+<label for="size">Choose a Size</label>
+<br>
+<select name="size" id="size">
+  <option value="small">Small</option>
+  <option value="medium">Medium</option>
+  <option value="large">Large</option>
+</select>
+<br>
+<label for="toppins">How many toppings?</label>
+<input type="number" name="toppins" id="toppins">
+<ul>
+    {{#each tops}}
+    <li>
+        <p> {{this.type}}</p>
+
+    </li>
+    {{/each}}
+
+
+
+</ul>
+<br>
+<label for="gluten"> Gluten Free Crust</label>
+<input type="checkbox" id="gluten" name="gluten" value="true">
+
+<br>
+<label for="instruction">Special Instructions (Optional)</label>
+<br>
+<textarea name="instruction" id="instruction" cols="30" rows="10"></textarea>
+
+<br>
+<button type="submit">Calulate Price</button>
+</form>
+
+<a href="/">Home</a>
+</div>

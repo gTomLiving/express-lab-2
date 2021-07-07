@@ -1,0 +1,19 @@
+body {
+    background-color:firebrick;
+    color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    color:dodgerblue;
+}
+a:hover {
+    color: forestgreen;
+}
+.box{
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
